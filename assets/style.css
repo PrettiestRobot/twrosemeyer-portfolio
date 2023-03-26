@@ -1,6 +1,41 @@
+:root {
+    --primary: rgb(255, 240, 215);
+    --secondary: rgb(255, 43, 43);
+    --light: white;
+    --dark: black;
+}
+
+* {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
 main {
   width: 100vw;
   height: 100vh;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2rem;
+    color: var(--dark);
+}
+
+#logo {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
 }
 
 .flex-container {
@@ -28,14 +63,14 @@ main {
 }
 
 .card {
-  border: solid 2px red;
+  background-color: var(--secondary);
 }
 
 .container {
-  background-color: blue;
+  background-color: var(--primary);
 }
 
 .aside {
-  background-color: blueviolet;
+  background-color: var(--dark);
   flex-basis: 25%;
 }
