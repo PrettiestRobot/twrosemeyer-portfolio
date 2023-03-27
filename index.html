@@ -5,12 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>twrosemeyer portfolio</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!----------------->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <nav class="flex-container">
-      <div id="logo"></div>
+      <!-- <div id="logo"></div> -->
+      <h3 class="name"><span class="n-span-c">< </span><span class="n-span-a">Thomas</span> Rose<span class="n-span-b"> : Meyer</span><span class="n-span-c"> /></span></h3>
       <ul class="flex">
         <li><a href="#about-me" class="nav-item">About Me</a></li>
         <li><a href="#work" class="nav-item">Work</a></li>
@@ -18,65 +27,79 @@
         <li><a href="#resume" class="nav-item">Resume</a></li>
       </ul>
     </nav>
-    <header><section class="hero-text"><h1>Look Ma! I'm Coding!</h1></section></header>
+    <header>
+      <section class="hero-text"><h1>Look Ma! I'm Coding!</h1></section>
+    </header>
     <main>
-        <section class="flex-container content-container">
-            <aside class="aside flex"><h2>About<br>Me</h2></aside>
-            <section class="card-container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae earum itaque autem, quis sunt ipsa. Numquam modi quae omnis voluptatibus quibusdam reprehenderit quam aliquam harum obcaecati nostrum, ipsa incidunt quo.</p></section>
+      <section id="about-me" class="flex-container content-container">
+        <aside class="aside flex">
+          <h2>About<br />Me</h2>
+        </aside>
+        <section class="card-container">
+          <p class="about-text">
+            With over 10 years of experience in print graphics, I am now transitioning to a career in web development. As a detail-oriented and design-savvy individual, I am confident in my ability to create visually appealing and user-friendly websites. I am a lifelong learner who is always seeking to improve my skills and stay up-to-date with the latest technologies in the field. I am excited to bring my unique perspective and passion for web development to a new role and contribute to the continued growth of the industry.
+          </p>
         </section>
-        <section class="flex-container content-container">
-            <aside class="aside flex"><h2>Work</h2></aside>
-            <section class="flex-container card-container">
-                <section  class="card feature-box">
-                    <a href="https://prettiestrobot.github.io/module-01-challenge-project/">
-                    <img
-                    
-                    src="./assets/images/Opera Snapshot_2023-03-27_032217_prettiestrobot.github.io.png"
-                  />
-                </a>
-                  <div class="project-title">
-                    <h3>Horiseon</h3>
-                    <p>Semantic HTML Markup</p>
-                  </div>
-                </section>
+      </section>
+      <section id="work" class="flex-container content-container">
+        <aside class="aside flex"><h2>Work</h2></aside>
+        <section class="flex-container card-container">
+          <section class="card feature-box">
+            <a
+              href="https://prettiestrobot.github.io/module-01-challenge-project/"
+            >
+              <img
+                src="./assets/images/Opera Snapshot_2023-03-27_032217_prettiestrobot.github.io.png"
+                alt="preview image of Horisien website"
+              />
+            </a>
+            <div class="project-title">
+              <h3>Horiseon</h3>
+              <p>Semantic HTML Markup</p>
+            </div>
+          </section>
 
-                <section class="card">
-                    <img
-                    src="https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                  />
-                  <div class="project-title"><h3>Project title</h3></div>
-                </section>
-                <section class="card">
-                    <img
-                    src="https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                  />
-                  <div class="project-title"><h3>Project title</h3></div>
-                </section>
-                <section class="card">
-                    <img
-                    src="https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                  />
-                  <div class="project-title"><h3>Project title</h3></div>
-                </section>
-                <section class="card">
-                    <img
-                    src="https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                  />
-                  <div class="project-title"><h3>Project title</h3></div>
-                </section>
-            </section>
+          <section class="card">
+            <img
+              src="https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+            />
+            <div class="project-title"><h3>Project title</h3></div>
+          </section>
+          <section class="card">
+            <img
+              src="https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+            />
+            <div class="project-title"><h3>Project title</h3></div>
+          </section>
+          <section class="card">
+            <img
+              src="https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+            />
+            <div class="project-title"><h3>Project title</h3></div>
+          </section>
+          <section class="card">
+            <img
+              src="https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+            />
+            <div class="project-title"><h3>Project title</h3></div>
+          </section>
         </section>
-        <section class="flex-container content-container">
-            <aside class="aside flex"><h2>Contact<br>Me</h2></aside>
-            <section class="card-container">
-                <ul class="flex c-nav">
-                    <li><a href="#" class="c-nav-item">503-519-1092</a></li>
-                    <li><a href="#" class="c-nav-item">prettiest.robot@gmail.com</a></li>
-                    <li><a href="#" class="c-nav-item">GitHub</a></li>
-                    <li><a href="#" class="c-nav-item">linkedin</a></li>
-                </ul>
-            </section>
+      </section>
+      <section class="flex-container content-container">
+        <aside class="aside flex">
+          <h2>Contact<br />Me</h2>
+        </aside>
+        <section id="contact-me" class="card-container">
+          <ul class="flex c-nav">
+            <li><a href="#" class="c-nav-item">503-519-1092</a></li>
+            <li>
+              <a href="#" class="c-nav-item">prettiest.robot@gmail.com</a>
+            </li>
+            <li><a href="#" class="c-nav-item">GitHub</a></li>
+            <li><a href="#" class="c-nav-item">linkedin</a></li>
+          </ul>
         </section>
+      </section>
     </main>
     <footer></footer>
   </body>
