@@ -1,44 +1,49 @@
 :root {
-/*  color scheme */
+  /*  color scheme */
   --primary: rgb(255, 251, 243);
   --secondary: rgb(255, 43, 43);
   --light: white;
   --dark: rgb(20, 20, 20);
 
-/* typography */
-    --fs-h1: 6rem;
-    --fs-h2: 2.25rem;
-    --fs-body: 1rem;
+  /* typography */
+  --fs-h1: 3.5rem;
+  --fs-h2: 3rem;
+  --fs-h3: 2rem;
+  --fs-body: 1rem;
 }
 
 /* global styles */
 
 * {
-    font-size: 16px;
-  }
+  font-size: 16px;
+}
 
 h1 {
-    font-size: var(--fs-h1);
+  font-size: var(--fs-h1);
+  font-weight: 700;
 }
 
 h2 {
-    font-size: var(--fs-h2);
-    line-height: 2.5rem;
+  font-size: var(--fs-h2);
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  line-height: 2.25rem;
 }
 
 p {
-    font-size: var(--fs-body);
-    line-height: 1.5rem;
+  font-size: var(--fs-body);
+  line-height: 1.5rem;
 }
-
-
 
 a {
   text-decoration: none;
 }
 
 main {
-    /* display: flex;
+  /* display: flex;
     flex-direction: column; */
   width: 100%;
   height: 100vh;
@@ -52,6 +57,7 @@ nav {
   padding: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .nav-item {
@@ -67,12 +73,23 @@ nav {
 }
 
 header {
-  background: url(https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  position: relative;
+  background-image: url(https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   justify-content: center;
   height: 360px;
+}
+
+.hero-text {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  background-color: var(--primary);
+  padding: 2rem 4rem 2rem 2rem;
+  color: var(--dark);
+  border-left: solid 0.75rem var(--secondary);
 }
 
 .flex-container {
@@ -87,7 +104,7 @@ header {
 
 .card-container > * {
   flex: 1 1 10em;
-  min-width: 50%;
+  min-width: 45%;
 }
 
 .card-container > *:nth-child(1) {
@@ -100,28 +117,43 @@ header {
 }
 
 .card {
-  height: 360px;
+  position: relative;
+  height: 11rem;
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px, rgba(0, 0, 0, 0.05) 0px 5px 5px;
 }
 
+
+
 .card img {
-  height: 360px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
+  border: solid .5rem var(--primary);
+}
+
+.card:hover {
+    transform: scale(102%);
 }
 
 .card:nth-child(even) {
-    padding-right: 8px;
-}
-
-.card:nth-child(odd) {
-    padding-left: 8px;
+  margin-right: 2rem;
 }
 
 .card-container .feature-box {
-    padding: 0;
+  padding: 0;
+  height: 22rem;
+}
+
+.project-title {
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  background-color: var(--primary);
+  padding: 1rem;
+  border-right: solid .5rem var(--secondary);
 }
 
 .container {
@@ -129,19 +161,19 @@ header {
 }
 
 .content-container {
-    margin: 2rem;
-    justify-content: center;
+  margin: 2rem;
+  justify-content: center;
 }
 
 .aside {
   /* background-color: var(--dark); */
   flex-basis: 20%;
-  border-right: solid .25rem var(--dark);
+  border-right: solid 0.25rem var(--dark);
   margin-right: 2rem;
   justify-content: flex-end;
   padding-right: 2rem;
 }
 
 .aside h2 {
-    text-align: right;
+  text-align: right;
 }
