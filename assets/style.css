@@ -43,12 +43,10 @@ a {
 }
 
 main {
-  /* display: flex;
-    flex-direction: column; */
+
   width: 100%;
   height: 100vh;
-  /* justify-content: center;
-  align-items: center; */
+
 }
 
 nav {
@@ -63,6 +61,13 @@ nav {
 .nav-item {
   margin-left: 2rem;
   color: var(--primary);
+  padding-bottom: .5rem;
+  border-bottom: solid .25rem var(--primary);
+}
+
+.nav-item:hover {
+    padding-bottom: .75rem;
+    border-bottom: solid .25rem var(--secondary);
 }
 
 #logo {
@@ -176,4 +181,17 @@ header {
 
 .aside h2 {
   text-align: right;
+}
+
+.c-nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem
+}
+
+.c-nav-item {
+    color: var(--dark);
+    padding-bottom: .5rem;
+    border-bottom: solid .25rem var(--dark);
 }
