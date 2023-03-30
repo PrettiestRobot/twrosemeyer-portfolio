@@ -120,12 +120,18 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  justify-content: center;
   height: 360px;
   z-index: -2;
 }
 
-.hero-text {
+.header-container {
+  margin: 2rem 0 2rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* .hero-text {
   position: absolute;
   right: 0;
   top: 30%;
@@ -133,6 +139,33 @@ header {
   padding: 2rem 4rem 2rem 2rem;
   color: var(--dark);
   border-left: solid 0.75rem var(--secondary);
+} */
+
+.hero-text {
+  background-color: var(--primary);
+  padding: 2rem 4rem 2rem 2rem;
+  color: var(--dark);
+  border-left: solid 0.75rem var(--secondary);
+}
+
+
+.self-container {
+  flex-basis: 20%;
+  margin-left: 2rem;
+  justify-content: flex-end;
+}
+
+.self {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.self img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .flex-container {
@@ -213,7 +246,6 @@ header {
 }
 
 .aside {
-  /* background-color: var(--dark); */
   flex-basis: 20%;
   border-right: solid 0.25rem var(--dark);
   margin-right: 2rem;
@@ -246,6 +278,13 @@ header {
   .m-name {
     display: flex;
   }
+
+  .self-container {
+    flex-basis: 20%;
+    margin-left: 0rem;
+    justify-content: flex-start;
+  }
+
   .break {
     display: none;
   }
@@ -271,6 +310,22 @@ header {
     margin-right: 0;
     padding: 0;
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1020px) {
+header {
+  height: 260px;
+}
+
+  .header-container {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .h-text-container {
+    display: none;
+    width: 100%;
   }
 }
 
