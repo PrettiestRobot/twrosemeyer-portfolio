@@ -79,6 +79,10 @@ nav {
   background-color: var(--secondary);
 }
 
+.m-nav {
+  display: none;
+}
+
 .name {
   color: var(--secondary);
   border-bottom: solid .25rem var(--alt);
@@ -234,7 +238,7 @@ header {
   }
 
   .m-name {
-    display: block;
+    display: flex;
   }
   .break {
     display: none;
@@ -265,6 +269,22 @@ header {
 }
 
 @media (max-width: 620px) {
+.nav {
+  padding: 1rem 1.5rem;
+}
+
+/* .m-nav {
+  display: flex;
+  flex-direction: column;
+  height: 35px;
+  width: 35px;
+  justify-content: space-between;
+} */
+
+/* .hamburger {
+  border-bottom: solid .25rem var(--primary);
+} */
+
   .card ,.card-container .feature-box {
     height: 11rem;
   }
@@ -279,5 +299,9 @@ header {
 
 .c-nav li {
   margin-bottom: 2rem;
+}
+
+.content-container{
+  margin: 1.5rem;
 }
 }
