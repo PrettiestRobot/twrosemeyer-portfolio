@@ -4,7 +4,7 @@
 
 A portfolio site to demonstrate my capabilities to potential clients or employers.
 
-Link to live site: 
+Link to live site: https://prettiestrobot.github.io/twrosemeyer-portfolio/
 
 
 ![](./assets/images/portfolio_screenshot.png)
