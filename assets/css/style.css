@@ -57,6 +57,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  overflow-x: hidden;
 }
 
 .nav-item {
@@ -266,6 +267,10 @@ main {
 /* responsive design cleanup */
 
 @media (max-width: 1190px) {
+body {
+  touch-action: pan-y;
+}
+
   .name {
     display: none;
   }
