@@ -13,6 +13,17 @@
   --fs-body: 1rem;
 }
 
+/* Mobile Type */
+
+@media (max-width: 620px) {
+  :root {
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+  }
+}
+
 /* global styles */
 
 * {
@@ -87,21 +98,22 @@ nav {
   color: var(--secondary);
   border-bottom: solid 0.25rem var(--alt);
   padding-bottom: 0.5rem;
+  font-size: 2rem;
 }
 
 .name .n-span-a {
   color: var(--primary);
-  font-size: var(--fs-h3);
+  font-size: 2rem;
 }
 
 .name .n-span-b {
   color: var(--primary);
-  font-size: var(--fs-h3);
+  font-size: 2rem;
 }
 
 .name .n-span-c {
   color: var(--secondary);
-  font-size: var(--fs-h3);
+  font-size: 2rem;
 }
 
 .m-name {
